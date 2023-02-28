@@ -1,0 +1,32 @@
+import randomtes
+
+aleatorio = random.randint(0,2)
+
+if aleatorio == 0:
+    escolha = 'pedra'
+elif aleatorio == 1:
+    escolha = 'papel'
+else:
+    escolha = 'tesoura'
+
+usuario = ' '    
+while usuario != 'pedra' and usuario != 'tesoura' and usuario != 'papel':
+    usuario = input("escolha pedra, papel ou tesoura >> ")
+
+if escolha == usuario:
+    vencedor = 'empate'
+elif escolha == 'pedra' and usuario == 'tesoura':
+    vencedor = 'computador'
+elif escolha == 'tesoura' and usuario == 'papel':
+    vencedor = 'computador'
+elif escolha == 'papel' and usuario == 'pedra':
+    vencedor = 'computador'
+else:
+    vencedor = 'usuario'
+
+print("usuario colocou", usuario, "e o computador colocou", escolha)
+
+if vencedor == 'empate':
+    print(vencedor)
+else:
+    print(vencedor, "venceu")
