@@ -1,0 +1,19 @@
+volume = ''
+aumentar = 0
+
+while volume != 'mute':
+    
+    volume = input('aumente [+], diminua [-] ou mute o volume >> ')
+    if volume == '+':
+        aumentar = aumentar + 1
+        print('volume atual é de >>', aumentar)
+    elif volume == '-':
+        aumentar = aumentar - 1
+        print('volume atual é de >> ', aumentar)
+
+
+print("volume mutado")
+        
+        
+    
+
