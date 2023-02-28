@@ -1,0 +1,45 @@
+nomes = []
+notas = []
+alunos = []
+notaf = []
+nomef = []
+final = []
+ori = []
+menor = 100
+segundo = 100
+alfabeto = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+quantidade = int(input('digite a quantidade de alunos '))
+
+for i in range(quantidade):
+    nome = input('digite um nome ')
+    nota = float(input('digite uma nota '))
+
+    nomes.append(nome)
+    notas.append(nota)
+
+
+for i in range(quantidade):
+    if notas[i] < menor:
+       menor = notas[i]
+
+for i in range(quantidade):
+    if notas[i] < segundo and notas[i] != menor:
+        segundo = notas[i]
+    
+
+for i in range(quantidade):
+    if notas[i] == segundo:
+        nomef.append(nomes[i])
+        notaf.append(notas[i])
+        
+for i in alfabeto:
+    for j in range(len(nomef)):
+        a = nomef[j]
+        if i == a[0]:
+            final.append(nomef[j])
+            final.append(notaf[j])
+            ori.append(a)
+
+for i in range(len(ori)):
+    print(ori[i])
