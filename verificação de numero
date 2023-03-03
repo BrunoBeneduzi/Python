@@ -1,0 +1,20 @@
+lista = []
+maior = 0
+menor = 1000000
+for i in range(0, 5):
+    a = int(input(" digite um numero >> "))
+    lista.append(a)
+
+for i in range(len(lista)):
+    if lista[i] > maior:
+        maior = lista[i]
+        posicao = i
+    if lista[i] < menor:
+        menor = lista[i]
+        posic = i
+
+print("o maior numero é {} que esta na posição {}".format(maior, posicao))
+print("o menor numero é {} que esta na posição {}".format(menor, posic))
+    
+
+
