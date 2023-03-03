@@ -1,0 +1,9 @@
+a = float(input("digite a velocidade do carro >> "))
+
+if a > 80:
+    b = a - 80
+    c = b * 7
+    print("seu carro está andando a {}KM".format(a))
+    print("velocidade maxima permitida 80KM, multa de {}R$".format(c))
+else:
+    print("seu carro está na velocidade maxima permitida 80KM")
