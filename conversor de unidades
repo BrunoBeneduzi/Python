@@ -1,0 +1,17 @@
+unidade = input("Digite M para converter metros em centimetros, ou digite C para converter centimetros em metros ")
+
+if unidade == 'm' or unidade == 'M':
+    metros = int(input("digite os metros para converter em centimetros >> "))
+    a = metros * 100
+
+    print("{} metros dão {} centimetros".format(metros, a))
+
+elif unidade == 'c' or unidade == 'C':
+    centimetros = int(input("digite os centimetros para converter para metros >> "))
+    a = centimetros / 100
+    print("{} centimetros dão {} metros".format(centimetros,a))
+                 
+
+
+
+
