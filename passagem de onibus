@@ -1,0 +1,11 @@
+print("digite quantos KM são a sua viagem")
+print("cada KM equivale a 0.50RS para no maximo 200KM e acima disso é 0.45RS")
+
+km = int(input("digite os KM >> "))
+
+if km <= 200:
+    total = km * 0.50
+    print("o total da passagem é {} R$".format(total))
+else:
+    total = km * 0.45
+    print("o total da passgem é {} R$".format(total))
