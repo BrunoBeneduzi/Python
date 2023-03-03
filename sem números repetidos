@@ -1,0 +1,23 @@
+lista = []
+
+
+a = 0
+
+while a != -1:
+    a = int(input("digite um numero ou digite (-1) para finalizar >> "))
+    teste = a
+    possui = 0
+    for i in range(len(lista)):
+        if teste == lista[i]:
+            possui = 1
+            print("....já existe.....")
+
+    if possui == 0 and a != -1:
+        lista.append(a)
+
+
+print(sorted(lista))
+            
+            
+
+
