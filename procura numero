@@ -1,0 +1,33 @@
+lista = []
+soma = 0
+a = 0
+while a != -1:
+    a = int(input("digite um numero ou digite -1 para encerrar >> "))
+
+    if a != -1:
+        soma = soma + 1
+        lista.append(a)
+
+
+for i in range(len(lista)):
+    for j in range(len(lista)):
+        if lista[i] > lista[j]:
+            c = lista[j]
+            lista[j] = lista[i]
+            lista[i] = c
+
+procurar = int(input("digite o valor que deseja procurar"))
+
+for i in range(len(lista)):
+    if procurar == lista[i]:
+        achou = i
+
+print("foram digitados {} numeros, o valor procurado foi {}".format(soma,procurar))
+print("foi encontrado o numero na posição {}".format(achou))
+print(lista)
+   
+    
+       
+
+
+    
